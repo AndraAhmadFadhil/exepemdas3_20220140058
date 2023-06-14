@@ -9,10 +9,10 @@ public:
 	vector<penerbit*> daftar_pengarang;
 
 	pengarang(string pNama) :nama(pNama) {
-		cout << "Pengarang \"";
+		cout << "Pengarang \n";
 	}
 	~pengarang() {
-		cout << "Pengarang \"";
+		cout << "Pengarang \n";
 	}
 
 	void tambahPenerbit(penerbit*);
@@ -25,10 +25,10 @@ public:
 	vector<pengarang*> daftar_penerbit;
 
 	penerbit(string pNama) :nama(pNama) {
-		cout << "Penerbit \"";
+		cout << "Penerbit \n";
 	}
 	~penerbit() {
-		cout << "Penerbit \"";
+		cout << "Penerbit \n";
 	}
 	void tambahPengarang(pengarang*);
 	void cetakPengarang();
@@ -39,7 +39,7 @@ void pengarang::tambahPenerbit(penerbit* pPenerbit) {
 }
 
 void pengarang::cetakPenerbit() {
-	cout << "Daftar Pengarang pada Penerbit 'Gama Press': \"" << this->nama << "\":\n";
+	cout << "Daftar Pengarang pada Penerbit Gama Press: \"" << this->nama << "\":\n";
 	for (auto& a : daftar_pengarang) {
 		cout << a->nama << "\n";
 	}
@@ -52,7 +52,7 @@ void penerbit::tambahPengarang(pengarang* pPengarang) {
 }
 
 void penerbit::cetakPengarang() {
-	cout << "Daftar Pengarang pada Penerbit 'Intan Pariwara': \"" << this->nama << "\":\n";
+	cout << "Daftar Pengarang pada Penerbit Intan Pariwara: \"" << this->nama << "\":\n";
 	for (auto& a : daftar_penerbit) {
 		cout << a->nama << "\n";
 	}
